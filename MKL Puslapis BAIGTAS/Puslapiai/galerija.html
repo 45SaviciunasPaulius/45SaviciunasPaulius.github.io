@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="lt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maisto kultūra Lietuvoje - Pradžia</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: cursive;
+        }
+
+        a {
+            color: inherit;
+            text-decoration: inherit;
+        }
+
+        #juosta {
+            background-color: black;
+            height: 50px;
+            padding-top: 10px;
+        }
+
+        #juosta div {
+            font-size: 23px;
+            font-weight: bold;
+            font-family: cursive;
+            display: inline;
+            color: white;
+            margin-left: 40px;
+        }
+
+        #juosta div:hover {
+            text-decoration: underline;
+            color: cyan;
+        }
+
+
+        #poraste {
+            margin-top: 30px;
+            background-color: black;
+            color: white;
+            text-align: center;
+        }
+
+        #poraste a {
+            text-decoration: underline;
+            font-size: 20px;
+        }
+
+        #poraste a:hover {
+            text-decoration: underline;
+            font-weight: bold;
+        }
+
+        #pavadinimas {
+            margin-top: 10px;
+        }
+
+        #pavadinimas div {
+            letter-spacing: 5px;
+            margin: auto;
+            background-size: cover;
+            padding-top: 100px;
+            text-align: left;
+            font-size: 50px;
+            color: black;
+            text-shadow: 3px 3px white;
+            font-weight: bold;
+            width: 1000px;
+            background-color: white;
+        }
+
+        #pavadinimas p {
+            margin: auto;
+            letter-spacing: 2px;
+            width: 970px;
+            margin-top: 30px;
+            border-left: solid black;
+            border-right: solid black;
+            padding: 10px;
+            text-align: justify;
+            font-size: 20px;
+        }
+
+        #logo {
+            float: none;
+            width: 100px;
+            border: none;
+            padding: 10px;
+            display: grid;
+            margin: auto;
+        }
+
+        .closebtn {
+            position: absolute;
+            top: 10px;
+            right: 15px;
+            color: red;
+            font-size: 35px;
+            cursor: pointer;
+        }
+
+        .container {
+            position: relative;
+            display: none;
+        }
+
+        #paveiksliukai img {
+            cursor: pointer;
+            height: 200px;
+            width: 300px;
+            box-shadow: 5px 5px 5px;
+        }
+        #paveiksliukai img:hover{
+            transform: scale(1.1);
+            box-shadow: 5px 5px 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="juosta">
+        <div><a href="index.html">Pradžia</a></div>
+        <div><a href="istorija.html">Istorija</a></div>
+        <div><a href="siuolaikine_virtuve.html">Šiuolaikška virtuvė</a></div>
+        <div><a href="regioniniai_patiekalai.html">Regioniniai patiekalai</a></div>
+        <div><a href="Festivalia_renginiai.html">Šventiškas stalas</a></div>
+        <div><a href="pasidalink.html">Pasidalink receptais!</a></div>
+        <div><a href="Kontaktai.html">Kontaktai</a></div>
+    </div>
+
+    <div id="pavadinimas">
+        <div> &nbsp;Galerija</div>
+
+
+        <div id="paveiksliukai">
+            <img src="../Paveiksliukai/uzgavenes1.png" alt="" onclick="myFunction(this);">
+
+            <img src="../Paveiksliukai/uzgavenes2.jpeg" alt="" onclick="myFunction(this);">
+
+
+            <img src="../Paveiksliukai/uzgavenes3.jpg" alt="" onclick="myFunction(this);">
+
+            <img src="../Paveiksliukai/velykos3.png" alt="" onclick="myFunction(this);">
+
+            <img src="../Paveiksliukai/kucios1.jpg" alt="" onclick="myFunction(this);">
+
+            <img src="../Paveiksliukai/velykos2.jpg" alt="" onclick="myFunction(this);">
+
+            <img src="../Paveiksliukai/kucios3.jpg" alt="" onclick="myFunction(this);">
+
+            <img src="../Paveiksliukai/kucios2.jpg" alt="" onclick="myFunction(this);">
+
+            <img src="../Paveiksliukai/kucios5.jpg" alt="" onclick="myFunction(this);">
+        </div>
+
+        <div class="container">
+            <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+            <img  src="#" alt="" id="expandedImg" style="width:100%">
+            <div id="imgtext"></div>
+        </div>
+    </div>
+
+    <script>
+
+        function myFunction(imgs) {
+            var expandImg = document.getElementById("expandedImg");
+            var imgText = document.getElementById("imgtext");
+            expandImg.src = imgs.src;
+            imgText.innerHTML = imgs.alt;
+            expandImg.parentElement.style.display = "block";
+        }
+    </script>
+
+    <img id="logo" src="../Paveiksliukai/logo.png" alt="logo">
+
+    <div id="poraste">
+        Paulius & Faustas 2023&copy;
+        <div><a href="Nuorodos.html">Nuorodos</a></div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="lt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maisto kultūra Lietuvoje - Pradžia</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: cursive;
+        }
+
+        a {
+            color: inherit;
+            text-decoration: inherit;
+        }
+
+        #juosta {
+            background-color: black;
+            height: 50px;
+            padding-top: 10px;
+        }
+
+        #juosta div {
+            font-size: 23px;
+            font-weight: bold;
+            font-family: cursive;
+            display: inline;
+            color: white;
+            margin-left: 40px;
+        }
+
+        #juosta div:hover {
+            text-decoration: underline;
+            color: cyan;
+        }
+
+
+        #poraste {
+            margin-top: 30px;
+            background-color: black;
+            color: white;
+            text-align: center;
+        }
+
+        #poraste a {
+            text-decoration: underline;
+            font-size: 20px;
+        }
+
+        #poraste a:hover {
+            text-decoration: underline;
+            font-weight: bold;
+        }
+
+        #pavadinimas div {
+            letter-spacing: 5px;
+            margin: auto;
+            background-image: url("../Paveiksliukai/telefonas.jpg");
+            background-size: cover;
+            background-position-y: -200px;
+            padding-top: 300px;
+            text-align: left;
+            font-size: 50px;
+            color: black;
+            text-shadow: 3px 3px white;
+            font-weight: bold;
+            width: 1000px;
+            height: 100px;
+            background-color: gray;
+        }
+
+        #logo {
+            float: none;
+            width: 100px;
+            border: none;
+            padding: 10px;
+            display: grid;
+            margin: auto;
+        }
+
+        #forma {
+            margin-top: 100px;
+            border-radius: 10px;
+            box-shadow: 10px 10px black;
+            background-color: white;
+            border: solid black;
+            font-size: 30px;
+            display: grid;
+            margin: auto;
+            width: 850px;
+        }
+
+        input {
+            width: 410px;
+            height: 30px;
+        }
+
+        #email {
+            width: 830px;
+        }
+
+        #pateikti {
+            margin: auto;
+            text-align: center;
+            border: solid black;
+            border-radius: 10px;
+            width: 150px;
+            cursor: pointer;
+
+        }
+
+        #pateikti:hover {
+            background-color: cyan;
+            font-weight: bold;
+        }
+
+        p:nth-child(3) {
+            margin: auto;
+            letter-spacing: 2px;
+            width: 970px;
+            margin-top: 30px;
+            border-left: solid black;
+            border-right: solid black;
+            padding: 10px;
+            text-align: justify;
+            font-size: 20px;
+        }
+
+        p {
+            text-align: center;
+            margin: auto;
+            letter-spacing: 2px;
+            width: 970px;
+            margin-top: 30px;
+            border-left: solid black;
+            border-right: solid black;
+            padding: 10px;
+            font-size: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="juosta">
+        <div><a href="index.html">Pradžia</a></div>
+        <div><a href="istorija.html">Istorija</a></div>
+        <div><a href="siuolaikine_virtuve.html">Šiuolaikška virtuvė</a></div>
+        <div><a href="regioniniai_patiekalai.html">Regioniniai patiekalai</a></div>
+        <div><a href="Festivalia_renginiai.html">Šventiškas stalas</a></div>
+        <div><a href="pasidalink.html">Pasidalink receptais!</a></div>
+        <div><a href="Kontaktai.html">Kontaktai</a></div>
+    </div>
+
+    <div id="pavadinimas">
+        <div> &nbsp; Susisiekite!</div>
+    </div>
+    <p>Jeigu turite klausimų, pasiūlymų ar tiesiog norite pasidalinti savo nuomonėmis, lauksime jūsų žinučių.
+        Susisiekite su mumis tiesiogiai, ir kartu galėsime dalintis idėjomis bei patirtimi.</p>
+    <br>
+    <p>Telefono numeris: +370 11111111</p>
+    <p>El. paštas: pastas@maistas.lt</p>
+    <p>Adresas: Adresas 21B LT-11111</p>
+    <br>
+    <br>
+    <div id="forma">
+        <form>
+            <table>
+                <tr>
+                    <td>Vardas*</td>
+                    <td>Pavardė*</td>
+                </tr>
+
+                <tr>
+                    <td><input type="text"></td>
+                    <td><input type="text"></td>
+                </tr>
+                <tr>
+                    <td colspan="2">El. paštas*</td>
+                </tr>
+                <tr>
+                    <td colspan="2"><input id="email" type="email"></td>
+                </tr>
+                <tr>
+                    <td colspan="2">Kuo jums galime padėti?*</td>
+                </tr>
+                <tr>
+                    <td colspan="2"><textarea cols="111" rows="20"></textarea></td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <div id="pateikti">Pateikti</div>
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+    <br>
+    <br>
+
+    <img id="logo" src="../Paveiksliukai/logo.png" alt="logo">
+
+    <div id="poraste">
+        Paulius & Faustas 2023&copy;
+        <div><a href="Nuorodos.html">Nuorodos</a></div>
+    </div>
+</body>
+
+</html>
